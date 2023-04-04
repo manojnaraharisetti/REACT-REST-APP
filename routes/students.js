@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const studentmodel = require("../models/student");
 
-router.post("/studpost", async (req, res) => {
+router.post("/", async (req, res) => {
     const name = req.body.name;
     const course = req.body.course;
     let studpost = new studentmodel({
